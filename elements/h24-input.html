@@ -1,0 +1,26 @@
+<dom-module id="h24-input">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+
+      input {
+        font-size: 16pt;
+        border: 1px solid purple;
+        border-radius: 4px;
+        color: purple;
+        padding: 8px;
+      }
+
+    </style>
+      <input id="xxx" value="{{inputValue::input}}">
+      <p>Hello {{inputValue}}</p>
+  </template>
+</dom-module>
+
+<script>
+  Polymer({
+    is: 'h24-input'
+  });
+</script>

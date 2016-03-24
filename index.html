@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Polymer</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/solarized.css" id="theme">
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+		<script>
+		    /* Forcing shadow dom */
+				/* See https://www.polymer-project.org/1.0/docs/devguide/settings.html */
+		    window.Polymer = {dom: 'shadow', lazyRegister: true};
+		  </script>
+		<link rel="import" href="bower_components/polymer/polymer.html">
+		<link rel="import" href="elements/h24-input.html">
+	</head>
+
+	<body>
+		<div class="reveal">
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Polymer</h1>
+					<h3>Building large Frontends with Webcomponents</h3>
+					<p>
+						<small>Created by <a href="#">Leandro R. S. Cruz</a></small>
+					</p>
+				</section>
+				<section>
+					<h3>Custom, Web Components</h3>
+					<pre><code class="html" data-trim contenteditable>
+&lt;html&gt;
+&nbsp;&nbsp;&lt;head/&gt;
+&nbsp;&nbsp;&lt;body&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;my-app&gt;&lt;/my-app&gt;
+&nbsp;&nbsp;&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+				</section>
+				<section _data-background="#4d7e65">
+					<h3>Custom, Web Components</h3>
+					<p>
+						A stack of HTML5 technologies that enable higher componentization of web applications:
+					</p>
+					<ol>
+						<li>Custom Elements</li>
+						<li>Html Imports</li>
+						<li>Templates</li>
+						<li>Shadow Dom</li>
+					</ol>
+					<p>
+						See: <a href="http://webcomponents.org" _style="color: #000">webcomponents.org</a>
+					</p>
+				</section>
+				<section _data-background="#9900cc">
+					<h3>Polymer</h3>
+					<p>
+						Why <a href="https://www.polymer-project.org/">polymer</a> ?
+					</p>
+					<p>
+						Polymer is a framework build on top of WebComponents that provides an aditional set of custom components
+						and extra functionality like two way data binding.
+					</p>
+					<p>
+						See <a href="https://builtwithpolymer.org/">builtwithpolymer.org</a>
+					<p>
+				</section>
+				<section _data-background="#9900cc">
+					<h3>Polymer</h3>
+					<p>
+						Seriously, why?
+					</p>
+					<ol>
+						<li>Highly reusable</li>
+						<li>Declarative approach</li>
+						<li>Large set of pre-built components</li>
+						<li>Good documentation/community</li>
+						<li>Enables good practices</li>
+						<li>Modern pipeline and tooling</li>
+					</ol>
+				</section>
+				<section>
+					<h3>Show Me the Code</h3>
+					<h24-input id="my_input"></h24-input>
+					<code class="hljs">&lt;h24-input&gt;&lt;/h24-input&gt;</code>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script>
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					// { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					// { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
