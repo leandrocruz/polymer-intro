@@ -55,13 +55,21 @@
 						See: <a href="http://webcomponents.org" _style="color: #000">webcomponents.org</a>
 					</p>
 				</section>
+				<section>
+						<h3>Custom, Web Components</h3>
+						<pre><code class="js" data-trim>
+var MegaButton = document.registerElement('mega-button', {
+  prototype: Object.create(HTMLButtonElement.prototype),
+  extends: 'button'
+});</code></pre>
+				</section>
 				<section _data-background="#9900cc">
 					<h3>Polymer</h3>
 					<p>
 						Why <a href="https://www.polymer-project.org/">polymer</a> ?
 					</p>
 					<p>
-						Polymer is a framework build on top of WebComponents that provides an aditional set of custom components
+						Polymer is a framework build on top of Web Components that provides an aditional set of custom components
 						and extra functionality like two way data binding.
 					</p>
 				</section>
