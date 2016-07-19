@@ -16,7 +16,7 @@
 		    window.Polymer = {dom: 'shadow', lazyRegister: true};
 		  </script>
 		<link rel="import" href="bower_components/polymer/polymer.html">
-		<link rel="import" href="elements/h24-input.html">
+		<link rel="import" href="elements/my-input.html">
 	</head>
 
 	<body>
@@ -92,15 +92,15 @@ var MegaButton = document.registerElement('mega-button', {
 				</section>
 				<section>
 					<h3>Show Me the Code</h3>
-					<h24-input id="my_input"></h24-input>
+					<my-input id="my_input"></my-input>
 					<div>
-						<pre><code class="html"><h24-input></h24-input></code></pre>
+						<pre><code class="html"><my-input></my-input></code></pre>
 					</div>
 				</section>
 				<section>
 					<h3>It's just HTML</h3>
 					<pre><code class="html" data-trim>
-<dom-module id="h24-input">
+<dom-module id="my-input">
   <template>
     <style>
       :host {
@@ -123,7 +123,7 @@ var MegaButton = document.registerElement('mega-button', {
 
 <script>
   Polymer({
-    is: 'h24-input'
+    is: 'my-input'
   });
 </script>
 					</code></pre>
